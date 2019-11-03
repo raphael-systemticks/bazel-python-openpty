@@ -8,3 +8,5 @@ RUN echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8
 RUN apt-get update \
   && apt-get install -y openjdk-8-jdk bazel \
   && rm -rf /var/lib/apt/lists/*
+
+RUN pip3 install pytest
